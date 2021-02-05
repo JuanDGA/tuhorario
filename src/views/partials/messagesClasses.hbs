@@ -1,0 +1,12 @@
+{{#if successMsgClasses}}
+<div class="w3-panel w3-card w3-padding w3-display-container w3-light-green w3-hover-lime transition">
+  <h2 onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-margin-right">&times;</h2>
+  <h2 class="w3-center">{{successMsgClasses}}</h2>
+</div>
+{{/if}}
+{{#if deletedMsgClasses}}
+<div class="w3-panel w3-card w3-padding w3-display-container w3-orange w3-hover-amber transition">
+  <h2 onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-margin-right">&times;</h2>
+  <h2 class="w3-center">{{deletedMsgClasses}}</h2>
+</div>
+{{/if}}

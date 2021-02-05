@@ -1,0 +1,20 @@
+<div class="w3-padding w3-bar w3-black w3-padding w3-margin-bottom">
+  <a class="w3-button w3-wide w3-bar-item" href="/">Horario</a>
+  <div class="w3-right">
+    {{#if user}}
+    <div class="w3-dropdown-hover">
+      <button onclick="showAction()" class="w3-button w3-black">Acciones</button>
+      <div id="dropdown" class="w3-dropdown-content w3-bar-block w3-border" style="right: 0;">
+        <a class="w3-button w3-bar-item w3-mobile" href="/Clases">Clases</a>
+        <a class="w3-button w3-bar-item w3-mobile" href="/Clases/Nueva">Añadir clase</a>
+        <a class="w3-button w3-bar-item w3-mobile" href="/Tareas">Tareas</a>
+        <a class="w3-button w3-bar-item w3-mobile" href="/Tareas/Nueva">Añadir tarea</a>
+        <a class="w3-button w3-bar-item w3-mobile" href="/Logout">Cerrar Sesión</a>
+      </div>
+    </div>
+    {{else}}
+    <a class="w3-button w3-bar-item w3-mobile" href="/Login">Iniciar Sesión</a>
+    <a class="w3-button w3-bar-item w3-mobile" href="/Register">Registrarse</a>
+    {{/if}}
+  </div>
+</div>

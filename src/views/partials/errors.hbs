@@ -1,0 +1,10 @@
+{{#if error}}
+<div class="w3-panel w3-card w3-display-container w3-red w3-margin">
+  <h2 class="w3-center">{{error}}</h2>
+</div>
+{{/if}}
+{{#each errors}}
+<div class="w3-panel w3-card w3-display-container w3-red w3-margin">
+  <h2 class="w3-center">{{text}}</h2>
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+<div>
+  {{#each tasks}}
+  <div class="w3-padding w3-col l4 m6 s12 ">
+    <div class="w3-card-4">
+      <header class="w3-center w3-display-container w3-light-gray">
+        <a href="/Tareas/Editar/{{_id}}"><i class="w3-margin-top w3-right w3-padding fas fa-edit"></i></a>
+        <h4 class="w3-padding">
+          {{subject}}
+        </h4>
+      </header>
+      <div class="w3-padding">
+        <p><b>Hora de entrega: </b>{{finalHour}}</p>
+        <p><b>Fecha de entrega: </b>{{finalDate}}</p>
+        <p><b>Descripcion: </b>{{description}}</p>
+        <form class="w3-center" action="/Tareas/Borrar/{{_id}}?_method=DELETE" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <input class="w3-red w3-button" type="submit" value="Eliminar">
+        </form>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

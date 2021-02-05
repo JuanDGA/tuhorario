@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/Styles.css">
+  <style>
+    .transition {
+      transition: 255ms;
+    }
+  </style>
+  <title>App Horario</title>
+</head>
+
+<body>
+  {{>navigation}}
+  <div class='w3-content w3-margin-top'>
+    {{>messagesClasses}}
+    {{>meessagesTasks}}
+    {{>errors}}
+    {{{body}}}
+  </div>
+  <script src="https://kit.fontawesome.com/e84b3a204e.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function showAction() {
+      var x = document.getElementById("dropdown");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>

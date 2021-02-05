@@ -1,0 +1,10 @@
+<div class="w3-col l2 m0 s0 w3-padding"></div>
+<form class="w3-col l8 m12 s12 w3-center w3-card-4 w3-padding" action="/Tareas/Editar/{{taskToUpdate._id}}?_method=PUT" method="POST">
+  <h3>Editar Tarea</h3>
+  <input type="hidden" name="_method" value="PUT">
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="subject" value="{{taskToUpdate.subject}}" placeholder="Materia" required autofocus>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="finalDate" value="{{taskToUpdate.finalDate}}" placeholder="Día finalización" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="finalHour" value="{{taskToUpdate.finalHour}}" placeholder="Hora finalización" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="description" value="{{taskToUpdate.description}}" placeholder="Descripción" required>
+  <input style="width: 100%" class="w3-button w3-black" type="submit" value="Guardar tarea">
+</form>

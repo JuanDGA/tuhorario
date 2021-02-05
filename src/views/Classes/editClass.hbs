@@ -1,0 +1,12 @@
+<div class="w3-col l2 m0 s0 w3-padding"></div>
+<form class="w3-col l8 m12 s12 w3-center w3-card-4 w3-padding" action="/Clases/Editar/{{classToUpdate._id}}?_method=PUT" method="POST">
+  <h3>Editar Clase</h3>
+  <input type="hidden" name="_method" value="PUT">
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="title" value="{{classToUpdate.title}}" placeholder="Nombre de la clase" required autofocus>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="teacher" value="{{classToUpdate.teacher}}" placeholder="Profesor/Profesora" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="days" value="{{classToUpdate.days}}" placeholder="Dias, ejemplo: (lunes-martes-viernes)" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="hourStart" value="{{classToUpdate.hourStart}}" placeholder="Hora de inicio, ejemplo: 14:30" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="hourEnd" value="{{classToUpdate.hourEnd}}" placeholder="Hora de finalización, ejemplo: 15:45" required>
+  <input class="w3-input w3-margin-top w3-margin-bottom" type="text" name="link" value="{{classToUpdate.link}}" placeholder="Link de la clase o reunión">
+  <input style="width: 100%" class="w3-button w3-black" type="submit" value="Guardar clase">
+</form>
