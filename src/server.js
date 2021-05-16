@@ -10,7 +10,7 @@ const passport = require('passport');
 const app = express();
 require('./config/passport');
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.TUHORARIO_PORT || 3000);
 app.set('views', path.join(__dirname,'views'));
 app.engine('.hbs', hbs({
   defaultLayout: 'main',
